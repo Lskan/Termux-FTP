@@ -12,10 +12,9 @@ echo $GREEN $string
 echo $WHITE
 pkg install busybox
 string1="Запуск успешен!"
-string2="Инструкцию можете найти в файле conf.txt"
+string2="Инструкцию можете найти в файле README.md"
 echo $RED $string2
 echo $GREEN $string1
 echo $WHITE
-echo "Для того, что бы зайти в FTP скачайте любой FTP проводник на свое устройство, далее захожим в него в и поле IP надо вести '0.0.0.0' в поле порт надо вести '1024' и в поле логин/имя пользователя водим 'root' "> conf.txt
 busybox tcpsvd -vE 0.0.0.0 1024 busybox ftpd -w ~
 
