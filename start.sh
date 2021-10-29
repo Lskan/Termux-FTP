@@ -12,7 +12,7 @@ echo $GREEN $string
 echo $WHITE
 pkg install busybox
 string1="Запуск успешен!"
-string2="Инструкцию можете найти в файле README.md"
+string2="Данные для подключение в файле README.md"
 echo $RED $string2
 echo $GREEN $string1
 echo $WHITE
